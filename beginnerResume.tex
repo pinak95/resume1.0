@@ -1,0 +1,149 @@
+%-------------------------
+% Resume in LaTeX
+% Author: Pinak Thakar
+% Website: pinakthakar.codes
+% License: MIT
+%-------------------------
+
+\documentclass[a4paper,11pt]{article}
+
+% Packages
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+
+% Page style
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+% URL style
+\urlstyle{same}
+
+% Text formatting
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Section formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Custom commands
+\newcommand{\resumeItem}[2]{\item\small{\textbf{#1}: #2 \vspace{-2pt}}}
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+  \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & #2 \\
+    \textit{#3} & \textit{#4} \\
+  \end{tabular*}\vspace{-5pt}
+}
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+\renewcommand{\labelitemii}{$\circ$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[label={$\bullet$}, leftmargin=*]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%%%%%% CV STARTS HERE %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}ll}
+  \textbf{{\LARGE Pinak Thakar}} & \textbf{Mobile:} +91-93288-08721 \\
+  \href{https://www.linkedin.com/in/pinak95/}{\textbf{LinkedIn:} \textcolor{blue}{linkedin.com/in/pinak95/}} & \textbf{GitHub:} \href{https://github.com/pinak95}{\textcolor{blue}{github.com/pinak95}} \\
+  \href{mailto:pinak.thakar95@gmail.com}{\textbf{Email:} \textcolor{blue}{pinak.thakar95@gmail.com}} & \textbf{Portfolio:} \href{https://pinakthakar.codes}{\textcolor{blue}{pinakthakar.codes}}
+\end{tabular*}
+
+%-----------EDUCATION-----------------
+\section{\textbf{{\LARGE Education}}}
+\resumeSubHeadingListStart
+  \resumeSubheading
+  {Charotar University of Science and Technology}{Gujarat, India}
+  {Bachelor of Technology - Computer Science and Engineering; CGPA: 9.02}{August 2019 - August 2024}
+  \resumeSubheading
+  {St Xavier's High School}{Gujarat, India}
+  {Higher Secondary Certificate (HSC); Percentage: 80\%}{August 2018 - March 2019}
+  \resumeSubheading
+  {Little Star}{Gujarat, India}
+  {Secondary School Certificate (SSC); Percentage: 86\%}{August 2016 - March 2017}
+\resumeSubHeadingListEnd
+
+%--------PROGRAMMING SKILLS------------
+\section{\textbf{{\LARGE Programming Skills}}}
+\begin{description}[font=$\bullet$]
+\item{\textbf{Languages}: HTML, CSS, JavaScript, Python}
+  \item{\textbf{Frameworks}: React.js, Node.js, Express.js}
+  \item{\textbf{Databases}: MongoDB, MySQL, SQLite3}
+  \item{\textbf{Tools}: Git, GitHub, Visual Studio Code, Postman}
+\end{description}
+
+%-----------EXPERIENCE-----------------
+\section{\textbf{{\LARGE Experience}}}
+\resumeSubHeadingListStart
+  \resumeSubheading
+  {Arihant Computers}{Gujarat, India}
+  {Web Developer with Machine Learning Intern}{May 2023 - June 2023}
+  \resumeItemListStart
+    \resumeItem{Website Development}
+    {Developed a location-based house price prediction website using HTML, CSS, and JavaScript, along with a Python Flask server to build a robust API for seamless integration}
+    \resumeItem{Machine Learning}
+    {Implemented machine learning algorithms including Lasso, Decision Tree Regressor, and Linear Regression, resulting in a significant improvement in price prediction accuracy}
+    \resumeItem{Performance Evaluation}
+    {Utilized GridSearchCV to evaluate and compare algorithm performance, achieving an accuracy rate of 84.77\%}
+  \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------------
+\section{\textbf{{\LARGE Projects}}}
+\begin{description}[font=$\bullet$]
+  \item{\textbf{Solana Blockchain Token}}
+  \resumeItemListStart
+    \item Created a Solana blockchain-based token and optimized transaction speed by 1 second through integration with the Phantom Wallet
+  \resumeItemListEnd
+  \textbf{Tech}: Solana blockchain, Solana CLI, Phantom Wallet
+  \hfill \textcolor{blue}{\href{https://solscan.io/token/6BiCMWFN32wQVGqcr9mDiLjerKhitryuatvhxNTYBdfD?cluster=devnet}{Check it out...}}
+  
+  \item{\textbf{Real Estate Platform}}
+  \resumeItemListStart
+    \item Developed an interactive platform for listing, selling, renting, and buying houses, leveraging the MERN (MongoDB, Express.js, React.js, Node.js) stack, resulting in increased user engagement and streamlined property transactions
+  \resumeItemListEnd
+  \textbf{Tech}: MERN Stack, Material-UI, Cloudinary, Heroku, MongoDB Atlas
+  \hfill \textcolor{blue}{\href{https://github.com/pinak95/realEstate}{Check it out...}}
+  
+  \item{\textbf{Password Wallet}}
+  \resumeItemListStart
+    \item Implemented a user-friendly graphical user interface (GUI) using Tkinter and enhanced password encryption with random and hashlib libraries
+  \resumeItemListEnd
+  \textbf{Tech}: Python, SQLite3, Tkinter, Random, Hashlib
+  \hfill \textcolor{blue}{\href{https://github.com/pinak95/passwordWallet}{Check it out...}}
+\end{description}
+
+
+%-----------ACHIEVEMENTS------------
+\section{\textbf{{\LARGE Achievements}}}
+\begin{itemize}[label={$\bullet$}, leftmargin=*]
+\item Achieved a C1 score in Cambridge English Assessment's IELTS, demonstrating advanced language proficiency
+\item Secured 1st place in a highly competitive university-level debate competition
+\item Organized and managed 250+ teams in a coding contest, demonstrating organizational abilities
+\item Scored 900/1000 in Azure AI Fundamentals, showcasing comprehensive AI expertise
+\end{itemize}
+
+\end{document}
