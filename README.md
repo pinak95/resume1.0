@@ -1,3 +1,3 @@
 # resume1.0
 
-This repository contains my personal resume in LaTeX code.
+Created my personal resume using LaTeX code.
